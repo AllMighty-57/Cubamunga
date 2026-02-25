@@ -16,12 +16,12 @@ public class PlayerBehavior : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
     }
 
@@ -30,6 +30,8 @@ public class PlayerBehavior : MonoBehaviour
         if (collision.gameObject.tag == "Obstacle")
         {
             Debug.Log("Object hit");
+            forwardForce = 0f;
+            sidewaysForce = 0f;
         }
     }
 }
