@@ -24,4 +24,12 @@ public class PlayerBehavior : MonoBehaviour
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
         }
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            Debug.Log("Object hit");
+        }
+    }
 }
