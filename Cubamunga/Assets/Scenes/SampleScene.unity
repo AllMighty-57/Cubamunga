@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.6666667, g: 0.69803923, b: 0.74509805, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.02
@@ -839,7 +839,6 @@ GameObject:
   - component: {fileID: 877549527}
   - component: {fileID: 877549526}
   - component: {fileID: 877549531}
-  - component: {fileID: 877549532}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -978,20 +977,6 @@ MonoBehaviour:
   rb: {fileID: 877549526}
   forwardForce: 7500
   sidewaysForce: 120
---- !u!114 &877549532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877549525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19be1f7dc9a53214c9572974aa212110, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minX: -5.5
-  maxX: 5.5
 --- !u!4 &915876626 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2856318108096414555, guid: 39dd86bd50351d947976dac801370bd2, type: 3}
@@ -1965,6 +1950,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1650593272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650593274}
+  - component: {fileID: 1650593273}
+  m_Layer: 0
+  m_Name: Game Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1650593273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650593272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c4f96d2dedab54c97380a716dd3c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1650593274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650593272}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1658982011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2521,3 +2550,4 @@ SceneRoots:
   - {fileID: 1784276016}
   - {fileID: 1643733688}
   - {fileID: 1102899526}
+  - {fileID: 1650593274}

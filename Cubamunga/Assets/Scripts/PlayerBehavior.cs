@@ -14,14 +14,20 @@ public class PlayerBehavior : MonoBehaviour
     {
         rb.AddForce(0, 0, forwardForce * Time.deltaTime); 
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        } 
+        if(rb.position.y < -1f)
+        {
+            forwardForce = 0f;
+            sidewaysForce = 0f;
+            FindAnyObjectByType<GameManager>().endGame();
         }
     }
 
@@ -32,6 +38,8 @@ public class PlayerBehavior : MonoBehaviour
             Debug.Log("Object hit");
             forwardForce = 0f;
             sidewaysForce = 0f;
+
+            FindAnyObjectByType<GameManager>().endGame();
         }
     }
 }
