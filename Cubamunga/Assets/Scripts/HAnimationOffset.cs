@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AnimationOffset : MonoBehaviour
+public class HAnimationOffset : MonoBehaviour
 {
     private Animator animator;
     public float offset;
