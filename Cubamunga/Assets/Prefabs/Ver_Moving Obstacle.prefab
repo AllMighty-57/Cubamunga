@@ -40,6 +40,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3870124762592149510}
     m_Modifications:
+    - target: {fileID: 2176310783849940222, guid: 39dd86bd50351d947976dac801370bd2, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 2856318108096414555, guid: 39dd86bd50351d947976dac801370bd2, type: 3}
       propertyPath: m_LocalScale.x
       value: 5.7656
@@ -91,6 +95,10 @@ PrefabInstance:
     - target: {fileID: 3260677771362837115, guid: 39dd86bd50351d947976dac801370bd2, type: 3}
       propertyPath: m_Name
       value: Obstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 7259682262865133918, guid: 39dd86bd50351d947976dac801370bd2, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 64
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

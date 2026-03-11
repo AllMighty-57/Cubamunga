@@ -15,12 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Level02.unity
     guid: f176d3fdce008f9489a318f8b455b1a5
   - enabled: 1
+    path: Assets/Scenes/Level03.unity
+    guid: cfd89a90ca57aec42baea81e5bf02a55
+  - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: caaae19cd7dca82498848627532efe93
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Lighting Prac.unity
     guid: 1e197186eeba9484186c37c2a7833df5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Light Probes.unity
     guid: a4db8bbf4ed14084aa95aea46532a882
   m_configObjects:
