@@ -35,6 +35,12 @@ public class PlayerBehavior : MonoBehaviour
             forwardForce = 0f;
             sidewaysForce = 0f;
             FindAnyObjectByType<GameManager>().endGame();
+        } 
+
+        if(Input.GetKey(KeyCode.N))
+        {
+            forwardForce = 2000f;
+            changingColorText.color = new Color(151f / 255f, 238f / 255f, 169f / 255f, 1f);
         }
     }
 
